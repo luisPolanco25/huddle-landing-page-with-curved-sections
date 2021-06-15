@@ -13,6 +13,12 @@
     --bolder: 700;
 }
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 html {
     font-size: 16px;
     font-family: var(--open);
@@ -21,4 +27,132 @@ html {
 body {
     width: 100%;
     min-height: 100vh;
+}
+
+header {
+    display: flex;
+    width: 100%;
+    padding: 3rem 6rem 3rem 6rem;
+    margin-bottom: 5rem;
+    justify-content: center;
+}
+
+#header-inner-container {
+    display: flex;
+    width: 1060px;
+
+}
+
+#header-logo {
+    flex-basis: 50%;
+}
+
+#header-logo img {
+    width: 180px;
+}
+
+#header-button {
+    flex-basis: 50%;
+}
+
+#header-button button {
+    float: right;
+    background-color: transparent;
+    font-family: var(--open);
+    font-size: 0.92rem;
+    color: var(--pink);
+    padding: 0.4rem;
+    width: 110px;
+    outline: none;
+    border: 1px solid var(--pink);
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 300ms ease;
+}
+
+#introduction {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+
+#introduction h1 {
+    font-size: 2.4rem;
+    color: var(--dark-cyan);
+    font-family: var(--poppins);
+    font-weight: var(--bolder);
+    margin-bottom: 1rem;
+}
+
+#introduction p {
+    color: var(--dark-cyan);
+    font-weight: var(--regular);
+    width: 510px;
+    text-align: center;
+    font-size: 1rem;
+    line-height: 1.4;
+    margin-bottom: 2rem;
+}
+
+#introduction button {
+    background-color: var(--pink);
+    padding: 1.18rem;
+    width: 320px;
+    color: white;
+    font-family: var(--open);
+    font-size: 0.9rem;
+    font-weight: var(--bold);
+    outline: none;
+    border: none;
+    border-radius: 45px;
+    margin-bottom: 2rem;
+    box-shadow: 0px 4px 6px #ccc;
+    cursor: pointer;
+    transition: all 300ms ease;
+}
+
+#introduction img {
+    width: 825px;
+    margin-bottom: 2rem;
+}
+
+#introduction div {
+    display: flex;
+    justify-content: space-between;
+    width: 780px;
+}
+
+#introduction div .stats {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#introduction div .stats span {
+    color: var(--dark-cyan);
+    font-size: 4.2rem;
+    font-weight: 700;
+}
+
+#introduction div .stats small {
+    font-size: 0.85rem;
+    color: lightslategray;
+    font-weight: 400;
+}
+
+#introduction div img {
+    width: 30px;
+    margin-bottom: -0.3rem;
+    margin-left: 0.5rem;
+}
+
+#introduction div .stats:first-child {
+    align-items: flex-start;
+    flex-basis: 65%;
+}
+
+#introduction div .stats:nth-child(2) {
+    align-items: flex-start;
+    flex-basis: 35%;
 }
