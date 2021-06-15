@@ -1,0 +1,24 @@
+:root {
+    --pink: hsl(322, 100%, 66%);
+    --light-pink: hsl(321, 100%, 78%);
+    --light-red: hsl(0, 100%, 63%);
+    --dark-cyan: hsl(192, 100%, 9%);
+    --pale-blue: hsl(207, 100%, 98%);
+
+    --open: 'Open Sans', sans-serif;
+    --poppins: 'Poppins', sans-serif;
+
+    --regular: 400;
+    --bold: 600;
+    --bolder: 700;
+}
+
+html {
+    font-size: 16px;
+    font-family: var(--open);
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+}
