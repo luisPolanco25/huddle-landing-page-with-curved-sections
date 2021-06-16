@@ -1,7 +1,6 @@
 :root {
     --pink: hsl(322, 100%, 66%);
     --light-pink: hsl(321, 100%, 78%);
-    --light-red: hsl(0, 100%, 63%);
     --dark-cyan: hsl(192, 100%, 9%);
     --pale-blue: hsl(207, 100%, 98%);
 
@@ -304,7 +303,7 @@ footer {
 
 #footer p {
     font-weight: 400;
-    width: 400px;
+    width: 375px;
     line-height: 1.6;
     margin-top: 1rem;
     margin-bottom: 2rem;
@@ -379,4 +378,173 @@ footer {
 
 #email-validation {
     font-size: 0.7em;
+}
+
+@media (max-width: 1150px) {
+
+    header {
+        padding: 3rem;
+    }
+    
+    #header-inner-container {
+        width: 900px;
+    }
+
+    #introduction img {
+        width: 800px;
+    }
+
+    #grow-container, #flowing-container, #users-container {
+        display: flex;
+        width: 785px;
+        align-items: center;
+    }
+
+    #grow-container img, #flowing-container img, #users-container img {
+        flex-basis: 45%;
+        width: 35%;
+    }
+
+    #grow-container div p, #flowing-container div p, #users-container div p {
+        font-size: 0.9rem;
+    }
+
+    #grow-container div, #users-container div {
+        margin-right: 4rem;
+    }
+
+    #flowing-container div {
+        margin-left: 4rem;
+    }
+
+    #footer {
+        width: 875px;
+    }
+
+    #footer #contact {
+        margin-right: 3rem;
+    }
+
+    #footer p {
+        font-size: 0.85rem;
+        width: 315px;
+    }
+
+    #footer a {
+        font-size: 1rem;
+    }
+
+    #footer #newsletter form input {
+        width: 185px;
+    }
+}
+
+@media (max-width: 900px) {
+
+    #header-inner-container {
+        width: 580px;
+    }
+
+    #introduction {
+        margin-bottom: 3rem;
+    }
+    
+    #introduction img {
+        width: 540px;
+    }
+
+    #introduction h1 {
+        font-size: 1.8rem;
+        text-align: center;
+    }
+
+    #introduction p {
+        width: 435px;
+        font-size: 0.85rem;
+    }
+
+    .buttons {
+        width: 260px;
+        font-size: 0.9rem;
+    }
+
+    #introduction div {
+        width: 520px;
+    }
+
+    #introduction div .stats span {
+        font-size: 3.4rem;
+    }
+
+    #introduction div .stats small {
+        font-size: 0.9rem;
+    }
+
+    #flowing-conversations {
+        margin-top: 7rem;
+        margin-bottom: 7rem;
+    }
+
+    #grow-container, #flowing-container, #users-container {
+        width: 580px;
+    }
+    
+    #grow-container div, #users-container div {
+        margin-right: 3rem;
+    }
+
+    #flowing-container div {
+        margin-left: 3rem;
+    }
+
+    #grow-container div h2, #flowing-container div h2, #users-container div h2 {
+        font-size: 1.45rem;
+    }
+
+    #grow-container div p, #flowing-container div p, #users-container div p {
+        font-size: 0.85rem;
+    }
+
+    #ready-to-build h2 {
+        margin-top: 3rem;
+        margin-bottom: 2rem;
+        font-size: 1.9rem;
+    }
+
+    footer {
+        padding: 3rem;
+    }
+
+    #footer {
+        width: 540px;
+    }
+
+    #footer p {
+        font-size: 0.85rem;
+        width: 200px;
+    }
+
+    #footer #contact #social-media {
+        margin-top: 2rem;
+    }
+
+    #footer #contact #social-media a {
+        font-size: 1.8rem;
+    }
+
+    #footer #newsletter form {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    #footer #newsletter form input {
+        width: 190px;
+        margin-right: 0;
+        margin-bottom: 1rem;
+    }
+
+    #footer #newsletter form button {
+        width: 190px;
+    }
+
 }
